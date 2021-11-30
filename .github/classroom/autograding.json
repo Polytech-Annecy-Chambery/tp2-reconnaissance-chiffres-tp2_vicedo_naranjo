@@ -1,0 +1,254 @@
+{
+  "tests": [
+    {
+      "name": "Teste si le résultat de la binarisation renvoie bien quelque chose.",
+      "setup": "pip install numpy matplotlib tqdm nose2 scikit-image",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_is_not_none",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si le résultat de la binarisastion est bien de la classe Image.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisarisation_is_Image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si après binarisation, l'objet obtenu est bien une nouvelle image",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_is_different_image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les pixels de l'objet de type Image résultant de la méthode binarisation est bien un numpy array.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_pixels_is_array",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les attributs de taille de l'objet de type Image résultant de la méthode binarisation sont bien de les mêmes que l'image initiale.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_shape_attributes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les pixels de de l'objet de type Image résultant de la méthode binarisation est bien un numpy array de la taille de l'image initiale.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_pixels_shape",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si l'image binarisée renvoie bien une image avec seulement deux valeurs de 0 et 255.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_binarisation.test_binarisation_is_binary",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si le résultat de la localisation renvoie bien quelque chose.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_is_not_none",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si le résultat de la localisation est bien de la classe Image.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_is_Image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si après localisation, l'objet obtenu est bien une nouvelle image",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_is_different_image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les pixels de l'objet de type Image résultant de la méthode localisation est bien un numpy array.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_pixels_is_array",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les attributs de taille de l'objet de type Image résultant de la méthode binarisation sont bien de les inférieurs à l'image initiale et image binarisée.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_shape_attributes_are_smaller",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si le numpy array des pixels de l'objet de type Image résultant de la méthode localisation a bien une taille inférieure ou égale à l'image de départ",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_localisation.test_localisation_pixels_shape_is_smaller",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si resize renvoie bien quelque chose.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_resize.test_resize_is_not_none",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si le résultat de resize est bien de la classe Image.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_resize.test_resize_is_Image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si après resize, l'objet obtenu est bien une nouvelle image",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_resize.test_resize_is_different_image",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les pixels de l'objet de type Image résultant de la méthode resize est bien un numpy array.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_resize.test_resize_pixels_is_array",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si les attributs de l'objet de type Image résultat de la méthode resize sont de la taille attendue.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_resize.test_resize_attributes",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste la méthode similitude ne renvoie pas None (oublie de return...).",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_similitude.test_similitude_is_not_none",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la méthode similitude renvoie un nombre et pas autre chose",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_similitude.test_similitude_is_number ",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la similitude entre une image et elle même est bien de 1",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_similitude.test_similitude_same_image_is_one",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la similitude entre un image et son négatif est bien 0",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_Image.Test_Image_similitude.test_similitude_negative_image_is_zero",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la fonction de reconnaissance renvoie bien qquechose.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_reconnaissance.Test_reconnaissance_chiffre.test_reconnaissance_is_not_None",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la fonction de reconnaissance renvoie un entier.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_reconnaissance.Test_reconnaissance_chiffre.test_reconnaissance_is_int",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Teste si la fonction de reconnaissance renvoie un chiffre.",
+      "setup": "",
+      "run": "cd tests; nose2 -s . test_reconnaissance.Test_reconnaissance_chiffre.test_reconnaissance_is_numeral",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
